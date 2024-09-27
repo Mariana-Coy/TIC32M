@@ -1,0 +1,95 @@
+/* selector universal
+/* Propiedad:valor*/
+*{
+    margin: 0px; /*margen*/
+    padding: 0p; /* sangria*/
+}
+/* selector body*/
+body { 
+    background-color: rgb(3, 9, 62); /*color de fondo de la pagina*/
+    color: white; /*color de letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*cambiar tipo de letra*/
+   font-size: 1em; /*cambiar tamaño de letra, es recomendable em*/
+}
+#contenedor{ /*siempre hicia con #*/
+    width:90%;/*ancho para ajustar el dispositivo*/
+    margin:5px auto; /*modelo de caja, primer valor centrar, segundo valor */
+    border:4px silver solid;/*contorno de la pagina, estilos de lineas son dashed linea punteada, outset, inset*/ 
+    border-radius:10px ;/*para establecer el contorno*/
+}
+nav{
+    background-color: beige;
+    text-align: center;
+    position: fixed;
+    width: 90%;
+    margin-bottom: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 25px;
+    
+}
+nav ul li a{
+    color: rgb(117, 92, 92);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:1.2em;
+    text-decoration: none;
+   
+}
+a:hover{
+    color:rgb(143, 12, 12);/*color de sombreado cuando pasas el mouse sobre el texto*/
+    text-decoration: underline; /*sombreado cuando pasas el mouse sobre el texto*/
+}
+header{
+    margin-top: 60px;
+    height:150%; /*altura*/
+    background:silver url("../Imagenes/Imagen.png"); /*imagen de fondo, valor url para color de imagen de fondo*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 150px;
+}
+h2,h3,h4,h5{
+    text-align: center;/*centrar los textos de titulos*/
+    margin: 10px; /*para separar los textos de titulos*/
+}
+h3{
+    color: tomato;
+}
+p{
+    padding:10px ;/*para separar texto de parrafos*/
+    text-align: justify;/*para jusfificar texto de parrafos*/
+    border: 1px silver solid;
+    border-radius: 10px;
+    margin: 0px 25px;
+}
+.impar{
+color: tomato;
+border-top-right-radius: 65px; ;
+
+}
+.par{
+    color: rgb(223, 226, 43);
+    padding: 0px 50px;
+
+}
+.regresar {
+    position: absolute; /* Para fijarlo en la parte superior izquierda */
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #007bff; /* Color azul como enlace */
+    text-decoration: underline; /* Subrayado para darle aspecto de enlace */
+    cursor: pointer; /* Cambiar el cursor cuando se pasa por encima */
+}
+
+.regresar i {
+    margin-right: 8px; /* Espacio entre la flecha y el texto */
+}
+
+.regresar:hover {
+    color: #0056b3; /* Cambia a un tono más oscuro al pasar el cursor */
+}

@@ -1,0 +1,214 @@
+/* Estilos generales */
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto de los elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente general de la página */
+    background-color: #f2d3f2; /* Color de fondo fuera del borde */
+    display: flex; /* Utiliza flexbox para centrar el contenido en el eje vertical y horizontal */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos el alto de la ventana */
+    padding: 20px; /* Añade padding alrededor del contenido para que no quede pegado al borde */
+}
+
+.container {
+    background-color: #ffffff; /* Color de fondo del contenedor principal */
+    padding: 20px; /* Añade padding interno al contenedor */
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 1200px; /* Establece un ancho máximo para el contenedor */
+    border: 4px solid rgb(192, 192, 192); /* Añade un borde de color gris alrededor del contenedor */
+    border-radius: 20px; /* Redondea las esquinas del borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor del contenedor */
+}
+
+/* Estilo para centrar el texto en la sección Sobre Nosotros */
+.sobre-nosotros {
+    text-align: center; /* Centra el texto dentro del elemento */
+    max-width: 800px; /* Limita el ancho máximo del elemento */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+}
+
+.titulo-principal {
+    text-align: center; /* Centra el texto del título principal */
+    font-size: 36px; /* Establece el tamaño de la fuente del título principal */
+    margin-bottom: 20px; /* Añade margen inferior al título */
+    color: #333; /* Establece el color del texto del título principal */
+}
+
+.item {
+    text-align: justify; /* Justifica el texto dentro del elemento */
+}
+
+.principal h3, .principal p {
+    max-width: 800px; /* Limita el ancho máximo de los encabezados y párrafos dentro de la sección principal */
+    margin: 0 auto; /* Centra los elementos horizontalmente */
+    text-align: justify; /* Justifica el texto dentro de los encabezados y párrafos */
+}
+
+header {
+    display: flex; /* Utiliza flexbox para alinear los elementos en el encabezado */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del encabezado */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    padding: 20px; /* Añade padding interno al encabezado */
+    background-color: #b290b4; /* Color de fondo del encabezado */
+    border-radius: 10px; /* Redondea las esquinas del borde del encabezado */
+    margin-bottom: 20px; /* Añade margen inferior al encabezado */
+}
+
+header .logo {
+    font-size: 24px; /* Establece el tamaño de la fuente del logo */
+    font-weight: bold; /* Establece el peso de la fuente del logo a negrita */
+}
+
+#logo img {
+    width: 80px; /* Establece el ancho de la imagen del logo */
+    height: 80px; /* Establece el alto de la imagen del logo */
+    border-radius: 50%; /* Redondea la imagen del logo para hacerla circular */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de lista por defecto */
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista en línea */
+    gap: 20px; /* Añade espacio entre los elementos de la lista */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Establece el color del texto de los enlaces */
+    font-weight: bold; /* Establece el peso de la fuente de los enlaces a negrita */
+}
+
+nav a:hover {
+    color: #fff; /* Cambia el color del texto cuando el puntero pasa sobre el enlace */
+    background-color: #333; /* Cambia el color de fondo cuando el puntero pasa sobre el enlace */
+    border-radius: 5px; /* Añade bordes redondeados al fondo del enlace */
+    padding: 5px 10px; /* Añade un poco de espacio alrededor del texto del enlace */
+}
+
+main {
+    padding: 20px; /* Añade padding interno a la sección principal */
+}
+
+.principal {
+    text-align: center; /* Centra el texto dentro de la sección principal */
+    margin-bottom: 40px; /* Añade margen inferior a la sección principal */
+}
+
+.principal h2 {
+    font-size: 28px; /* Establece el tamaño de la fuente del encabezado de la sección principal */
+}
+
+.boton-ver-mas {
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    margin-top: 10px; /* Añade margen superior al botón */
+    padding: 10px 20px; /* Añade padding interno al botón */
+    background-color: #b290b4; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del texto del botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+}
+
+.boton-ver-mas:hover {
+    background-color: #555; /* Cambia el color de fondo del botón cuando el puntero pasa sobre él */
+}
+
+/* Estilo para la sección de servicios */
+.servicios {
+    display: flex; /* Utiliza flexbox para alinear los elementos de la sección de servicios */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 20px; /* Añade espacio entre los elementos de la sección de servicios */
+    margin-bottom: 40px; /* Añade margen inferior a la sección de servicios */
+}
+
+.servicio {
+    flex: 1; /* Hace que los elementos de la sección de servicios se distribuyan de manera equitativa */
+    border: 2px solid silver; /* Añade un borde gris claro alrededor de cada servicio */
+    padding: 20px; /* Añade padding interno a cada servicio */
+    border-radius: 10px; /* Redondea las esquinas del borde de cada servicio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor de cada servicio */
+    text-align: center; /* Centra el texto dentro de cada servicio */
+}
+
+.servicio h3 {
+    font-size: 22px; /* Establece el tamaño de la fuente del encabezado de cada servicio */
+    margin-bottom: 10px; /* Añade margen inferior al encabezado de cada servicio */
+}
+
+.servicio p {
+    font-size: 16px; /* Establece el tamaño de la fuente del texto de cada servicio */
+    line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad del texto */
+}
+
+.recuadro {
+    border: 2px solid silver; /* Añade un borde gris claro alrededor de cada recuadro */
+    padding: 20px; /* Añade padding interno a cada recuadro */
+    border-radius: 10px; /* Redondea las esquinas del borde de cada recuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor de cada recuadro */
+}
+
+.secundario {
+    display: flex; /* Utiliza flexbox para alinear los elementos de la sección secundaria */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 20px; /* Añade espacio entre los elementos de la sección secundaria */
+    margin-bottom: 40px; /* Añade margen inferior a la sección secundaria */
+}
+
+.secundario .recuadro {
+    flex: 1; /* Hace que los elementos de la sección secundaria se distribuyan de manera equitativa */
+    text-align: justify; /* Justifica el texto dentro de cada recuadro */
+}
+
+footer {
+    background-color: #b290b4; /* Color de fondo del pie de página */
+    padding: 20px; /* Añade padding interno al pie de página */
+    border-radius: 10px; /* Redondea las esquinas del borde del pie de página */
+    text-align: center; /* Centra todo el texto del pie de página */
+}
+
+footer ul {
+    list-style: none; /* Elimina los puntos de lista por defecto */
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista en línea */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    gap: 20px; /* Añade espacio entre los elementos de la lista */
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Añade margen inferior a cada elemento de la lista */
+}
+
+footer a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces en el pie de página */
+    color: #333; /* Establece el color del texto de los enlaces */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Añade un subrayado a los enlaces cuando el puntero pasa sobre ellos */
+}
+
+footer .contacto ul {
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista de contacto */
+    flex-direction: column; /* Distribuye los elementos en una columna */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Añade espacio entre los elementos de la lista de contacto */
+}
+.regresar {
+    position: absolute; /* Para fijarlo en la parte superior izquierda */
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #007bff; /* Color azul como enlace */
+    text-decoration: underline; /* Subrayado para darle aspecto de enlace */
+    cursor: pointer; /* Cambiar el cursor cuando se pasa por encima */
+}
+
+.regresar i {
+    margin-right: 8px; /* Espacio entre la flecha y el texto */
+}
+
+.regresar:hover {
+    color: #0056b3; /* Cambia a un tono más oscuro al pasar el cursor */
+}
